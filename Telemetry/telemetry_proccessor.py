@@ -2,6 +2,7 @@ import json
 from collections import defaultdict
 import numpy as np
 # cdf_multiple([tls_time, ocsp_req_time], ['TLS handshake time', 'OCSP response time'], 'OCSP response time vs TLS handshsake time', 'Milliseconds')
+
 def get_leaf_files(path):
     import os
     list_of_files = []
@@ -10,8 +11,10 @@ def get_leaf_files(path):
             list_of_files.append(os.path.join(root, file))
     return list_of_files
 
+
 def datify(element):
     return "{}-{}-{}".format(element[0: 4], element[4: 6], element[6: 8])
+
 
 def get_date_ticks(x, interval=30):
     ticks = []
