@@ -48,7 +48,7 @@ else {
 }
 
 // export NODE_OPTIONS=--max_old_space_size=16384
-var username = 'lum-customer-c_9c799542-zone-protick-dns-remote';
+var username = 'xxxx';
 
 
 // TWEAK -->
@@ -250,7 +250,7 @@ async function asnLookup_phase_1(domain, exp_id, phase, executed, bucket_number)
                     port: '22225',
                     auth: {
                         username: username + '-asn-' + domain.asn + '-session-' + luminati_session_id,
-                        password: 'cbp4uaamzwpy'
+                        password: 'asdasdsad'
                     }
                 },
                 timeout: 5000,
